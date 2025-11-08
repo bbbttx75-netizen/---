@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مشروع التداول بالذكاء الاصطناعي</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F4F6F7;
+      color: #1B2631;
+      padding: 20px;
+      text-align: center;
+    }
+    header {
+      background-color: #2E86C1;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    section {
+      margin-top: 30px;
+    }
+    button {
+      background-color: #28B463;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1D8348;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>مشروع التداول بالذكاء الاصطناعي</h1>
+    <p>تحليل ذكي وتوصيات فورية لأسواق ExpertOption</p>
+  </header>
+
+  <section>
+    <h2>اختر نوع التوصية</h2>
+    <button onclick="showRecommendation('buy')">توصية شراء</button>
+    <button onclick="showRecommendation('sell')">توصية بيع</button>
+    <p id="result" style="margin-top:20px; font-size:20px;"></p>
+  </section>
+
+  <script>
+    function showRecommendation(type) {
+      const result = document.getElementById("result");
+      if (type === "buy") {
+        result.textContent = "📈 التوصية: شراء - الاتجاه صاعد حسب المؤشرات الفنية.";
+      } else {
+        result.textContent = "📉 التوصية: بيع - الاتجاه هابط حسب المؤشرات الفنية.";
+      }
+    }
+  </script>
+</body>
+</html>
